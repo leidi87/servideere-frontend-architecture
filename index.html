@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Maquetación | Proyectos</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- CDN de jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <main class="container">
+        <header class="header">
+            <h1 class="header__title">Mis Servicios Tecnológicos</h1>
+            <nav class="filter">
+                <button class="filter__btn filter__btn--active" data-category="all">Todos</button>
+                <button class="filter__btn" data-category="design">Diseño</button>
+                <button class="filter__btn" data-category="dev">Desarrollo</button>
+            </nav>
+        </header>
+
+        <section class="services-grid">
+            <!-- Tarjeta 1 -->
+            <article class="card js-card" data-type="design">
+                <div class="card__body">
+                    <h3 class="card__title">Maquetación Web</h3>
+                    <p class="card__text">Estructuras limpias y semánticas con HTML5.</p>
+                    <span class="card__badge">BEM Method</span>
+                </div>
+            </article>
+
+            <!-- Tarjeta 2 -->
+            <article class="card js-card" data-type="dev">
+                <div class="card__body">
+                    <h3 class="card__title">Lógica con jQuery</h3>
+                    <p class="card__text">Interactividad avanzada para el usuario final.</p>
+                    <span class="card__badge card__badge--highlight">Producción</span>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
