@@ -3,44 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Maquetación | Proyectos</title>
+    <title>Servi Deere | Reparación de Maquinaria</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- CDN de jQuery -->
+    <link rel="shortcut icon" href="servi-icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
-
+    <a href="https://wa.me/573176677848" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <header class="header">
+        <div class="header__container">
+            <img src="LOGO.jpg" alt="Logo Servi Deere" class="header__logo">
+            <h1 class="header__title">Reparación de Maquinaria John Deere</h1>
+        </div>
+    </header>
     <main class="container">
-        <header class="header">
-            <h1 class="header__title">Mis Servicios Tecnológicos</h1>
-            <nav class="filter">
-                <button class="filter__btn filter__btn--active" data-category="all">Todos</button>
-                <button class="filter__btn" data-category="design">Diseño</button>
-                <button class="filter__btn" data-category="dev">Desarrollo</button>
-            </nav>
-        </header>
-
-        <section class="services-grid">
-            <!-- Tarjeta 1 -->
-            <article class="card js-card" data-type="design">
-                <div class="card__body">
-                    <h3 class="card__title">Maquetación Web</h3>
-                    <p class="card__text">Estructuras limpias y semánticas con HTML5.</p>
-                    <span class="card__badge">BEM Method</span>
-                </div>
-            </article>
-
-            <!-- Tarjeta 2 -->
-            <article class="card js-card" data-type="dev">
-                <div class="card__body">
-                    <h3 class="card__title">Lógica con jQuery</h3>
-                    <p class="card__text">Interactividad avanzada para el usuario final.</p>
-                    <span class="card__badge card__badge--highlight">Producción</span>
-                </div>
-            </article>
+        <section class="services">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <article class="card">
+                    <i class="fas fa-tractor card__icon"></i>
+                    <h3 class="card__title">Mantenimiento</h3>
+                    <p class="card__text">Servicio técnico especializado en Piedras, Tolima.</p>
+                </article>
+                <article class="card">
+                    <i class="fas fa-cogs card__icon"></i>
+                    <h3 class="card__title">Repuestos</h3>
+                    <p class="card__text">Distribución de partes originales.</p>
+                </article>
+            </div>
+        </section>
+        <section class="contact">
+            <h2 class="section-title">Contáctanos</h2>
+            <form id="contact-form" class="form">
+                <input type="text" id="name" placeholder="Tu Nombre" class="form__input" required>
+                <input type="tel" id="phone" placeholder="Tu Teléfono" class="form__input" required>
+                <textarea id="message" placeholder="¿Cómo podemos ayudarte?" class="form__input form__input--area" required></textarea>
+                <button type="submit" class="form__submit">Enviar Solicitud</button>
+            </form>
         </section>
     </main>
-
+    <footer class="footer">
+        <div class="footer__socials">
+            <a href="https://www.tiktok.com/" target="_blank" class="footer__link"><i class="fab fa-tiktok"></i> TikTok</a>
+            <a href="https://www.facebook.com/" target="_blank" class="footer__link"><i class="fab fa-facebook"></i> Facebook</a>
+        </div>
+        <p class="footer__location">Piedras, Tolima - Colombia</p>
+    </footer>
     <script src="app.js"></script>
+</body>
+</html>
 </body>
 </html>
