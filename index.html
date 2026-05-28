@@ -191,18 +191,23 @@ footer strong{color:var(--yellow)}
           <div><label for="cel">Celular *</label><input type="tel" id="cel" placeholder="Ej: 3001234567" required/></div>
           <div>
             <label for="equipo">Tipo de equipo</label>
-            <select id="equipo">
-              <option value="">Selecciona el equipo...</option>
-              <option>Tractor agricola</option>
-              <option>Cortadora de cesped montable</option>
-              <option>Cortadora de empuje</option>
-              <option>Otro equipo John Deere</option>
-            </select>
-          </div>
-          <div><label for="mensaje">Describe el problema</label><textarea id="mensaje" placeholder="Cuentanos que falla tiene tu equipo..."></textarea></div>
-          <button type="submit" class="form-submit">Enviar solicitud</button>
-          <div class="success-msg" id="successMsg">Mensaje enviado! Te contactaremos pronto.</div>
-        </form>
+          <select id="equipo" name="tipo_de_equipo" required>
+            <option value="">Selecciona el equipo...</option>
+            <option value="Tractor Agricola">Tractor agricola</option>
+            <option value="Cortadora de Cesped Montable">Cortadora de cesped montable</option>
+            <option value="Cortadora de Empuje">Cortadora de empuje</option>
+            <option value="Otro equipo John Deere">Otro equipo John Deere</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="mensaje">Describe el problema</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Cuentanos que falla tiene tu equipo..." required></textarea>
+        </div>
+
+        <button type="submit" class="form-submit">Enviar solicitud</button>
+        <div class="success-msg" id="successMsg">Mensaje enviado! Te contactaremos pronto.</div>
+      </form>
       </div>
     </div>
   </div>
