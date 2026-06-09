@@ -27,3 +27,27 @@ body { font-family: 'Segoe UI', sans-serif; background-color: #f4f7f6; color: va
 .card__text { font-size: 0.9rem; color: #666; line-height: 1.5; }
 .card__badge { display: inline-block; margin-top: 15px; font-size: 0.75rem; padding: 4px 8px; background: #eee; border-radius: 12px; }
 .card__badge--highlight { background: #dcfce7; color: #166534; }
+
+/* BOTÓN FLOTANTE WHATSAPP */
+
+.whatsapp-float{
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    bottom: 25px;
+    right: 25px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 32px;
+    line-height: 65px;
+    text-decoration: none;
+    z-index: 9999;
+    box-shadow: 0 4px 15px rgba(0,0,0,.3);
+    transition: all .3s ease;
+}
+
+.whatsapp-float:hover{
+    transform: scale(1.1);
+}
